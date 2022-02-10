@@ -1,0 +1,61 @@
+Variables are nothing but reserved memory locations to store values. This means that when you create a variable you reserve some space in memory.
+
+Based on the data type of a variable, the interpreter allocates memory and decides what can be stored in the reserved memory. Therefore, by assigning different data types to variables, you can store integers, decimals or characters in these variables.
+
+Assigning Values to Variables
+Python variables do not need explicit declaration to reserve memory space. The declaration happens automatically when you assign a value to a variable. The equal sign (=) is used to assign values to variables.
+
+The operand to the left of the = operator is the name of the variable and the operand to the right of the = operator is the value stored in the variable. For example −
+
+Live Demo
+#!/usr/bin/python
+
+counter = 100          # An integer assignment
+miles   = 1000.0       # A floating point
+name    = "John"       # A string
+
+print counter
+print miles
+print name
+Here, 100, 1000.0 and "John" are the values assigned to counter, miles, and name variables, respectively. This produces the following result −
+
+100
+1000.0
+John
+Multiple Assignment
+Python allows you to assign a single value to several variables simultaneously. For example −
+
+a = b = c = 1
+Here, an integer object is created with the value 1, and all three variables are assigned to the same memory location. You can also assign multiple objects to multiple variables. For example −
+
+a,b,c = 1,2,"john"
+Here, two integer objects with values 1 and 2 are assigned to variables a and b respectively, and one string object with the value "john" is assigned to the variable c.
+
+Expressions:
+
+Expressions are representations of value. They are different from statement in the fact that statements do something while expressions are representation of value. For example any string is also an expressions since it represents the value of the string as well.
+
+Python has some advanced constructs through which you can represent values and hence these constructs are also called expressions.
+
+
+statements:
+
+A simple statement is comprised within a single logical line. Several simple statements may occur on a single line separated by semicolons.
+* A statement is an instruction that the Python interpreter can execute. 
+ We have seen two kinds of statements: print and assignment.
+ When you type a statement on the command line, Python executes it and displays the result, if there is one. 
+ The result of a print statement is a value. Assignment statements don't produce a result.
+
+* A script usually contains a sequence of statements. 
+* If there is more than one statement, the results appear one at a time as the statements execute.
+
+For example, the script
+
+print 1
+x = 2
+print x
+
+produces the output
+> 1
+> 2
+Again, the assignment statement produces no output.
